@@ -1,0 +1,95 @@
+:root{
+    --bg-light : #e5ebe7;
+    --bd-light: white;
+    --accent-color: #CEAFE7;
+    --text-light: rgba(46, 34, 34, 0.25);
+}
+
+p{
+    line-height: 2.3em;
+}
+
+h1{
+    font-family: "Lora";
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1em;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-light)
+    
+}
+.tag-line{
+    margin-bottom: 2rem;
+}
+.right-col{
+    position: relative;
+    display: flex;
+    
+    
+}
+
+.btn-gw-primary{
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 12px;
+}
+
+.btn-gw-secondary{
+    color: var(--accent-color);
+    background-color: white;
+    border-radius: 12px;
+}
+
+.inner-shadow{
+    box-shadow: inset 3px -3px 12px rgba(0, 0, 0, .35), inset -10px 10px 20px white;
+}
+
+.diamond{
+    position: absolute;
+    background-color: var(--bg-light);
+    border-radius: 15px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+}
+
+.diamond-1{
+    width:  400px;
+    height: 400px;
+    align-self: center;
+    left: 25%;
+}
+.diamond-2{
+    width:  220px;
+    height: 220px;
+    left: 43%;
+    top: 50%;
+    
+
+}
+.diamond-3{
+    width:  120px;
+    height: 120px;
+    left: 52%;
+    top: 73%;
+}
+
+
+
+@media  screen and (max-width:600px){
+    h1{
+        font-size: 3rem;
+    }
+    .header{
+        margin: 0 1rem;
+    }
+    
+}
+
+
