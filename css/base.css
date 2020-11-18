@@ -1,0 +1,53 @@
+:root {
+  --bg-light: #e5ebe7;
+  --bd-light: white;
+  --accent-color: #CEAFE7;
+  --text-light: rgba(46, 34, 34, 0.25);
+  --text-lighter: #c4c4c4;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-light)
+}
+
+.heading-1, .heading-3, .heading-4, .heading-5, .brand-name {
+  font-family: "Lora";
+}
+
+.heading-1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.inner-shadow {
+  box-shadow: inset 3px -3px 12px rgba(0, 0, 0, .35), inset -10px 10px 20px white;
+}
+
+.btn-gw-primary {
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 12px;
+}
+
+.btn-gw-secondary {
+  color: var(--accent-color);
+  background-color: white;
+  border-radius: 12px;
+}
+
+.btn-gw-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--bg-light);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16), -2px -2px 5px white;
+}

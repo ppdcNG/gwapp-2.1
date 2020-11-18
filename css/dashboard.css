@@ -1,0 +1,146 @@
+.inner-shadow {
+  box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .35), inset -10px -10px 20px white;
+}
+
+.inner-outer-shadow{
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25), -3px -3px 5px white, inset 2px 2px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 10px white;
+}
+
+.outer-shadow {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25), -3px -3px 5px white;
+}
+
+.db-left-col {
+  height: 85vh;
+  border-radius: 31px;
+}
+
+.logout-icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e5ebe7;
+  padding: .9em;
+  color: var(--accent-color) !important;
+}
+
+.sm-header {
+  border-radius: 24px;
+}
+
+.overview .column {
+  border-radius: 10px;
+  width: 30%;
+}
+
+.mobile-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #d7e0da;
+}
+.mobile-footer a {
+  display: grid;
+  place-content: center;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  padding: 15px;
+  border-radius: 7px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+.mobile-footer .active, .nav-active {
+  box-shadow: inset 3px 3px 10px rgba(0, 0, 0, .35), inset -5px -5px 10px white;
+}
+
+.inner-shadow i {
+  color: var(--accent-color);
+}
+
+.inner-shadow div h4 {
+  font-weight: 600;
+  font-family: "Lora";
+}
+
+.inner-shadow div p {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: var(--text-lighter);
+}
+
+.recent-act {
+  border-radius: 10px;
+}
+
+.heading-5 {
+  color: #5C5858;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-gw-circle {
+  color: var(--accent-color);
+}
+
+.right-col {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.right-col::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.action-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: grid;
+  place-content: center;
+}
+
+
+.action-btn .badge {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  background: var(--bg-light);
+  color: red !important;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.activity span, .date {
+  font-size: 12px;
+}
+
+.date {
+  color: var(--accent-color);
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.check-name {
+  font-family: "Lora";
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.nav a {
+  margin-bottom: 2rem;
+  width: 90%;
+  padding: 1rem 0;
+  padding-left: 2rem;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #9D94A3;
+}
+
+.nav-active {
+  color: var(--accent-color);
+}
