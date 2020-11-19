@@ -113,6 +113,15 @@
   font-size: 10px;
 }
 
+.del-icon {
+  color: #F8BDBD;
+}
+.success-icon {
+  color: #A3EAD4;
+}
+.print-icon {
+  color: #A3D9EA;
+}
 .activity span, .date {
   font-size: 12px;
 }
@@ -143,4 +152,13 @@
 
 .nav-active {
   color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+  .action-btn {
+    margin-top: 1em;
+  }
+  .date, .desc {
+    padding: 0 .8em;
+  }
 }
