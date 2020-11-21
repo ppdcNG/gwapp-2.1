@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/requisition.css">
+        <!-- <link rel="stylesheet" href="css/req-items.css"> -->
+        <link rel="stylesheet" href="css/req-beneficiaries.css">
+    </head>
+    <body>
+        <main>
+            <div class="container h-100 my-5">
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <section class="container pt-3 inner-shadow db-left-col">
+                            <a href="" class="align-self-center brand-name ml-3">gwapp</a>
+                            <div class="d-flex flex-column text-center pt-4">
+                                <img class="rounded-circle mx-auto" alt="avatar" src="https://placehold.it/100x100">
+                                <h2 class="w-50 mx-auto mt-2">Adekunle Adelowo</h2>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between nav align-items-center mt-5">
+                                <a class="outer-shadow" href="">
+                                    <i class="fas fa-home mr-2"></i>
+                                    Home
+                                </a>
+                                <a class="nav-active" href="">
+                                    <i class="fas fa-list mr-2"></i>
+                                    Requisitions
+                                </a>
+                                <a class="outer-shadow" href="">
+                                    <i class="fas fa-cog mr-2"></i>
+                                    Settings
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-9 pt-lg-1 right-col">
+                        <section class="p-3 mb-5 outer-shadow requisition-section">
+                            <ul class="nav mt-4 nav-tabs justify-content-center outer-shadow" id="tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        id="requisition-tab"
+                                        data-toggle="tab"
+                                        href="#requisition"
+                                        role="tab"
+                                        aria-controls="requisition"
+                                        aria-selected="true"
+                                    >
+                                        <i class="fas fa-file"></i>
+                                        Requisition
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="conversation-tab"
+                                        data-toggle="tab"
+                                        href="#conversation"
+                                        role="tab"
+                                        aria-controls="conversation"
+                                        aria-selected="false"
+                                    >
+                                        <i class="fas fa-comment-dots"></i>
+                                        Conversation
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="my-3 progress-circle justify-content-center">
+                                <li>
+                                    <a href="">
+                                        <div class="circle inner-shadow-sm"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="circle inner-shadow-sm"></div>
+                                    </a>
+                                </li>
+                                <li class="current">
+                                    <a href="">
+                                        <div class="circle inner-shadow-sm"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-1" id="myTabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="requisition"
+                                    role="tabpanel"
+                                    aria-labelledby="requisition-tab"
+                                >
+                                    <section class="container">
+                                        <h4 class="mb-3 heading-4">Bank Details</h4>
+                                        <p class="my-3">Beneficiaries</p>
+                                    </section>
+                                    <form class="container">
+                                        <div class="form-row beneficiaries">
+                                            <div class="col">
+                                                <div class="card outer-shadow">
+                                                    <h5 class="heading-5">Vanguard News</h5>
+                                                    <div class="row justify-content-between">
+                                                        <p class="col-lg-6 m-0 text-muted">0076936598</p>
+                                                        <p class="col-lg-6 m-0 text-muted">GT Bank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card outer-shadow">
+                                                    <h5 class="heading-5">Hotel Seventeen</h5>
+                                                    <div class="row justify-content-between">
+                                                        <p class="col-lg-6 m-0 text-muted">0076936598</p>
+                                                        <p class="col-lg-6 m-0 text-muted">GT Bank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card outer-shadow">
+                                                    <h5 class="heading-5">Nigerian Info</h5>
+                                                    <div class="row justify-content-between">
+                                                        <p class="col-lg-6 m-0 text-muted">0076936598</p>
+                                                        <p class="col-lg-6 m-0 text-muted">GT Bank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card outer-shadow">
+                                                    <h5 class="heading-5">Nigerian Info</h5>
+                                                    <div class="row justify-content-between">
+                                                        <p class="col-lg-6 m-0 text-muted">0076936598</p>
+                                                        <p class="col-lg-6 m-0 text-muted">GT Bank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form class="container mt-4">
+                                        <div class="form-group">
+                                            <label class="m-0" for="beneficiary">Name of Beneficiary</label>
+                                            <input type="text" id="beneficiary" class="form-control inner-shadow">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="m-0" for="beneficiary-bank">Beneficiary Bank Name</label>
+                                            <input type="text" id="beneficiary-bank" class="form-control inner-shadow">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="m-0" for="beneficiary-account">Beneficiary Account Number</label>
+                                            <input type="text" id="beneficiary-account" class="form-control inner-shadow">
+                                        </div>
+                                        <div class="form-row mt-5">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="currency">Requisition Attentioned To?</label>
+                                                    <select name="" id="" class="form-control inner-shadow"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col pt-4">
+                                                <div class="d-flex attendees-avatar">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle" alt="avatar">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle" alt="avatar">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle" alt="avatar">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between py-5">
+                                            <button type="button" class="btn btn-gw-secondary" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-gw-primary">Next</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="conversation"
+                                    role="tabpanel"
+                                    aria-labelledby="conversation-tab"
+                                ></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="mobile-footer d-flex justify-content-around py-3 d-lg-none">
+                <a class="outer-shadow active" href="">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a class="outer-shadow" href="">
+                    <i class="fas fa-list"></i>
+                </a>
+                <a class="outer-shadow" href="">
+                    <i class="fas fa-cog"></i>
+                </a>
+            </section>
+        </footer>
+    </body>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</html>

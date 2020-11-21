@@ -1,0 +1,114 @@
+.fa-pen {
+  color: var(--accent-color);
+}
+.requisition-section {
+  border-radius: 35px;
+}
+
+.inner-shadow-sm {
+  box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
+}
+
+#tabs {
+  background-color: var(--bg-light);
+  width: max-content;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Lora";
+}
+
+.nav-item {
+  padding: .3em .8em;
+}
+
+.nav-tabs .nav-link {
+  padding: .5em;
+  margin: 0;
+  width: max-content;
+  font-size: 1em;
+}
+
+.nav-tabs .nav-link.active {
+  background: none;
+  border-radius: 7px;
+  width: auto;
+  border: none;
+  box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .35), inset -10px -10px 20px white;
+}
+
+.nav-tabs .nav-link.active i {
+  color: var(--accent-color);
+}
+
+.progress-circle {
+  background: none;
+  padding: 1em 0;
+  list-style-type: none;
+  display: flex;
+}
+.circle {
+  width: 1em;
+  height: 1em;
+  background: white;
+  border-radius: 50%;
+  margin: 0 1em;
+  display: grid;
+  place-content: center;
+}
+
+.current .circle {
+  background: var(--accent-color);
+  box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .35);
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 2em auto;
+  border-radius: 9px;
+  background-color: none;
+}
+
+input[type=text]:focus, select:focus, textarea:focus {
+  outline: 3px solid #e5ebe7;
+  background-color: var(--bg-light);
+}
+
+.form-control {
+  background-color: var(--bg-light);
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+.progress {
+  height: 2em;
+}
+
+.progress-bar {
+  width: 30%;
+  height: 2em;
+  background-color: var(--accent-color);
+}
+
+.custom-control .custom-control-label::before,
+.custom-control .custom-control-label::after{
+  right: -3rem;
+  left: initial;
+}
+.custom-control-label {
+  font-size: 1.1em;
+  margin-top: 1.5em;
+  line-height: 1.2em;
+}
+
+.custom-control-label::before,
+.custom-control-label::after {
+  margin-top: .3em;
+  padding: 15px;
+  background-color: var(--bg-light);
+  border: none;
+  box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
+  border-radius: 3px;
+}

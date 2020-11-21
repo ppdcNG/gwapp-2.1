@@ -34,7 +34,7 @@ body {
 
 .btn-gw-secondary {
   color: var(--accent-color);
-  background-color: white;
+  background-color: var(--bg-light);
   border-radius: 12px;
 }
 
