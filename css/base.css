@@ -16,6 +16,10 @@
   color: var(--accent-color) !important;
 }
 
+.gw-success-color {
+  color: #A3EAD4;
+}
+
 .gw-danger-color{
   color: #F8BDBD !important;
 }
@@ -30,7 +34,7 @@ body {
   /* color: var(--text-light) */
 }
 
-.heading-1, .heading-3, .heading-4, .heading-5, .brand-name {
+.heading-1, .heading-3, .heading-4, .heading-5, .heading-6, .brand-name {
   font-family: "Lora";
 }
 
