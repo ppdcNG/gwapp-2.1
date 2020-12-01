@@ -112,3 +112,47 @@ input[type=text]:focus, select:focus, textarea:focus {
   box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .35), inset -3px -3px 5px white;
   border-radius: 3px;
 }
+
+.heading-5 {
+  font-weight: 700;
+}
+
+.conversation {
+  padding-left: 4em;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.conversation > div:nth-of-type(even) {
+  margin-right: -8em;
+}
+.chat {
+  border-radius: 11px;
+}
+
+.chat-time {
+  font-size: 12px;
+  float: right;
+  color: var(--accent-color);
+}
+
+.message-form {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  .conversation {
+    padding-left: 0;
+  }
+
+  .conversation > div:nth-of-type(even) {
+    margin: 0 -8em 0 8em;
+  }
+
+  .message-form {
+    width: 100vw;
+  }
+}

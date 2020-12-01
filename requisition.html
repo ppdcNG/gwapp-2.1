@@ -59,7 +59,10 @@
                                         role="tab"
                                         aria-controls="requisition"
                                         aria-selected="true"
-                                    ><i class="fas fa-file"></i> Requisition</a>
+                                    >
+                                        <i class="fas fa-file"></i>
+                                        Requisition
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a
@@ -70,24 +73,27 @@
                                         role="tab"
                                         aria-controls="conversation"
                                         aria-selected="false"
-                                    ><i class="fas fa-comment-dots"></i> Conversation</a>
+                                    >
+                                        <i class="fas fa-comment-dots"></i>
+                                        Conversation
+                                    </a>
                                 </li>
                             </ul>
                             <ul class="my-3 progress-circle justify-content-center">
                                 <li class="current">
                                     <a href="">
-                                       <div class="circle inner-shadow-sm"></div>
-                                    <a>
+                                        <div class="circle inner-shadow-sm"></div>
+                                    </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                       <div class="circle inner-shadow-sm"></div>
-                                    <a>
+                                        <div class="circle inner-shadow-sm"></div>
+                                    </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                       <div class="circle inner-shadow-sm"></div>
-                                    <a>
+                                        <div class="circle inner-shadow-sm"></div>
+                                    </a>
                                 </li>
                             </ul>
                             <div class="tab-content mt-1" id="myTabContent">
@@ -116,11 +122,20 @@
                                             <div class="form-row pb-3">
                                                 <div class="col-10 py-2">
                                                     <div class="progress md-progress inner-shadow">
-                                                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                                        <div
+                                                            class="progress-bar"
+                                                            role="progressbar"
+                                                            aria-valuenow="30"
+                                                            aria-valuemin="0"
+                                                            aria-valuemax="100"
+                                                        >30%</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 align-items-center">
-                                                    <button class="btn btn-sm btn-gw-secondary"><i class="fas fa-upload"></i> Upload</button>
+                                                    <button class="btn btn-sm btn-gw-secondary">
+                                                        <i class="fas fa-upload"></i>
+                                                        Upload
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-between mt-3">
@@ -158,7 +173,11 @@
                                                 <div class="form-check">
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="checkbox">
-                                                        <label class="custom-control-label pull-left" for="checkbox">Raise Withholding<br/>Tax</label>
+                                                        <label class="custom-control-label pull-left" for="checkbox">
+                                                            Raise Withholding
+                                                            <br>
+                                                            Tax
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -181,7 +200,40 @@
                                     role="tabpanel"
                                     aria-labelledby="conversation-tab"
                                 >
-                                    
+                                    <section class="conversation">
+                                        <div class="d-flex justify-content-start my-5">
+                                            <div class="row mt-4">
+                                                <div class="col-2">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="" class="rounded-circle img-fluid">
+                                                </div>
+                                                <div class="col-6 chat outer-shadow p-2">
+                                                    <h5 class="heading-5">
+                                                        Mercy Don Igwe
+                                                        <span class="chat-time">10 mins ago</span>
+                                                    </h5>
+                                                    <p>Hello Yetunde I have raised the requisition for radio</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end my-5">
+                                            <div class="row mt-4">
+                                                <div class="col-6 chat outer-shadow p-2">
+                                                    <h5 class="heading-5">
+                                                        Yetunde Adeoye
+                                                        <span class="chat-time">Just now</span>
+                                                    </h5>
+                                                    <p>Thanks Mercy I have seen the requisition you raised</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="" class="rounded-circle img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form class="container row message-form">
+                                            <input type="text" id="message" class="mt-2 col-8 form-control inner-shadow" />
+                                            <button class="btn btn-md btn-gw-primary">Send</button>
+                                        </form>
+                                    </section>
                                 </div>
                             </div>
                         </section>
