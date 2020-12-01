@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/dashboard.css">
         <link rel="stylesheet" href="css/requisition.css">
         <!-- <link rel="stylesheet" href="css/req-items.css"> -->
-        <link rel="stylesheet" href="css/req-beneficiaries.css">
+        
     </head>
     <body>
         <main>
@@ -100,73 +100,79 @@
                             </ul>
                             <div class="tab-content mt-1" id="myTabContent">
                                 <div
-                                    class="tab-pane fade show active"
+                                    class="tab-pane fade show active px-lg-5"
                                     id="requisition"
                                     role="tabpanel"
                                     aria-labelledby="requisition-tab"
                                 >
                                     <section class="container">
                                         <h4 class="mb-3 heading-4">Bank Details</h4>
-                                        <p class="my-3">Beneficiaries</p>
                                     </section>
-                                    <form class="container">
-                                        <div class="form-row beneficiaries">
-                                            <div class="col">
-                                                <div class="card outer-shadow">
-                                                    <h5 class="heading-5">Vanguard News</h5>
-                                                    <div class="row justify-content-between">
-                                                        <p class="col-lg-6 m-0 text-muted">0076936598</p>
-                                                        <p class="col-lg-6 m-0 text-muted">GT Bank</p>
+                                    <div class="container">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="">Beneficiaries</p>
+                                            <input type="text" class="inner-shadow-sm search-sm" placeholder="Search Beneficiary" />
+                                        </div>
+                                        <div class = "beneficiaries-scroll">
+                                            <div class="form-row beneficiaries">
+                                                <div class="col">
+                                                    <div class="card outer-shadow-sm">
+                                                        <h5 class="heading-5">Vanguard News</h5>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class=" m-0 text-muted">0076936598</p>
+                                                            <p class=" m-0 text-muted">GT Bank</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card outer-shadow">
-                                                    <h5 class="heading-5">Hotel Seventeen</h5>
-                                                    <div class="row justify-content-between">
-                                                        <p class="col-lg-6 m-0 text-muted">0076936598</p>
-                                                        <p class="col-lg-6 m-0 text-muted">GT Bank</p>
+                                                <div class="col">
+                                                    <div class="card outer-shadow-sm">
+                                                        <h5 class="heading-5">Hotel Seventeen</h5>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class=" m-0 text-muted">0076936598</p>
+                                                            <p class=" m-0 text-muted">GT Bank</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card outer-shadow">
-                                                    <h5 class="heading-5">Nigerian Info</h5>
-                                                    <div class="row justify-content-between">
-                                                        <p class="col-lg-6 m-0 text-muted">0076936598</p>
-                                                        <p class="col-lg-6 m-0 text-muted">GT Bank</p>
+                                                <div class="col">
+                                                    <div class="card outer-shadow-sm">
+                                                        <h5 class="heading-5">Nigerian Info</h5>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class=" m-0 text-muted">0076936598</p>
+                                                            <p class=" m-0 text-muted">GT Bank</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card outer-shadow">
-                                                    <h5 class="heading-5">Nigerian Info</h5>
-                                                    <div class="row justify-content-between">
-                                                        <p class="col-lg-6 m-0 text-muted">0076936598</p>
-                                                        <p class="col-lg-6 m-0 text-muted">GT Bank</p>
+                                                <div class="col">
+                                                    <div class="card outer-shadow-sm">
+                                                        <h5 class="heading-5">Nigerian Info</h5>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class=" m-0 text-muted">0076936598</p>
+                                                            <p class=" m-0 text-muted">GT Bank</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+                                       
+                                    </div>
                                     <form class="container mt-4">
                                         <div class="form-group">
                                             <label class="m-0" for="beneficiary">Name of Beneficiary</label>
-                                            <input type="text" id="beneficiary" class="form-control inner-shadow">
+                                            <input type="text" id="beneficiary" class="form-control inner-shadow-sm">
                                         </div>
                                         <div class="form-group">
                                             <label class="m-0" for="beneficiary-bank">Beneficiary Bank Name</label>
-                                            <input type="text" id="beneficiary-bank" class="form-control inner-shadow">
+                                            <input type="text" id="beneficiary-bank" class="form-control inner-shadow-sm">
                                         </div>
                                         <div class="form-group">
                                             <label class="m-0" for="beneficiary-account">Beneficiary Account Number</label>
-                                            <input type="text" id="beneficiary-account" class="form-control inner-shadow">
+                                            <input type="text" id="beneficiary-account" class="form-control inner-shadow-sm">
                                         </div>
                                         <div class="form-row mt-5">
                                             <div class="col">
                                                 <div class="form-group">
                                                     <label for="currency">Requisition Attentioned To?</label>
-                                                    <select name="" id="" class="form-control inner-shadow"></select>
+                                                    <select name="" id="" class="form-control inner-shadow-sm"></select>
                                                 </div>
                                             </div>
                                             <div class="col pt-4">
@@ -178,17 +184,81 @@
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-between py-5">
-                                            <button type="button" class="btn btn-gw-secondary" data-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-gw-primary">Next</button>
+                                            <button type="button" class="btn btn-gw-secondary outer-shadow-sm" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-gw-primary outer-shadow-sm">Next</button>
                                         </div>
                                     </form>
                                 </div>
-                                <div
-                                    class="tab-pane fade"
-                                    id="conversation"
-                                    role="tabpanel"
-                                    aria-labelledby="conversation-tab"
-                                ></div>
+                                <div class="tab-pane fade" id="conversation" role="tabpanel" aria-labelledby="conversation-tab">
+                                    <div class = "chat-main-container px-3 px-lg-5">
+                                        <div class = "chat-container">
+                                            <div class = "left chat my-5">
+                                                <div class = "av-container">
+                                                    <img class = "chat-avatar" src = "./images/pp.jpg"/>
+                                                </div>
+                                                <div class = "chat-bubble outer-shadow-lg mx-3 p-1 p-lg-3">
+                                                    <div>
+                                                        <h5 class = "chat-heading">Adekunle Adelowo</h5>
+                                                        <span class = "chat-time">10m</span>
+                                                    </div>
+                                                    <p class ="chat-message">
+                                                        Hello Yetunde I have raise the requisition for radio
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class = "right chat my-5">
+                                                
+                                                <div class = "chat-bubble outer-shadow-lg mx-3 p-1 p-lg-3">
+                                                    <div>
+                                                        <h5 class = "chat-heading">Adekunle Adelowo</h5>
+                                                        <span class = "chat-time">10m</span>
+                                                    </div>
+                                                    <p class ="chat-message">
+                                                        Hello Yetunde I have raise the requisition for radio
+                                                    </p>
+                                                </div>
+                                                <div class = "av-container">
+                                                    <img class = "chat-avatar" src = "./images/pp.jpg"/>
+                                                </div>
+                                            </div>
+                                            <div class = "left chat my-5">
+                                                <div class = "av-container">
+                                                    <img class = "chat-avatar" src = "./images/pp.jpg"/>
+                                                </div>
+                                                <div class = "chat-bubble outer-shadow-lg mx-3 p-1 p-lg-3">
+                                                    <div>
+                                                        <h5 class = "chat-heading">Adekunle Adelowo</h5>
+                                                        <span class = "chat-time">10m</span>
+                                                    </div>
+                                                    <p class ="chat-message">
+                                                        Hello Yetunde I have raise the requisition for radio
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class = "right chat my-5">
+                                                
+                                                <div class = "chat-bubble outer-shadow-lg mx-3 p-1 p-lg-3">
+                                                    <div>
+                                                        <h5 class = "chat-heading">Adekunle Adelowo</h5>
+                                                        <span class = "chat-time">10m</span>
+                                                    </div>
+                                                    <p class ="chat-message">
+                                                        Hello Yetunde I have raise the requisition for radio
+                                                    </p>
+                                                </div>
+                                                <div class = "av-container">
+                                                    <img class = "chat-avatar" src = "./images/pp.jpg"/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class = "send-container d-flex align-items-center px-lg-3">
+                                            <input type = "text" class = "form-control inner-shadow-sm">
+                                            <button class = "btn chat-send-button btn-gw-primary">Send</button>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </div>

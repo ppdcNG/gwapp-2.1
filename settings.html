@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/settings.css">
+    </head>
+    <body>
+        <main>
+            <div class="container h-100 my-5">
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <section class="container pt-3 inner-shadow db-left-col">
+                            <a href="" class="align-self-center brand-name ml-3">gwapp</a>
+                            <div class="d-flex flex-column text-center pt-4">
+                                <img class="rounded-circle mx-auto" alt="avatar" src="https://placehold.it/100x100">
+                                <h2 class="w-50 mx-auto mt-2">Adekunle Adelowo</h2>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between nav align-items-center mt-5">
+                                <a class="outer-shadow" href="">
+                                    <i class="fas fa-home mr-2"></i>
+                                    Home
+                                </a>
+                                <a class="outer-shadow" href="">
+                                    <i class="fas fa-list mr-2"></i>
+                                    Requisitions
+                                </a>
+                                <a class="nav-active" href="">
+                                    <i class="fas fa-cog mr-2"></i>
+                                    Settings
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-9 pt-lg-1 right-col">
+                        <section class="d-flex px-2">
+                            <a href="" class="align-self-center brand-name d-lg-none">gwapp</a>
+                            <a class="ml-auto rounded-circle inner-outer-shadow logout-icon">
+                                <i class="fas fa-power-off"></i>
+                            </a>
+                        </section>
+                        <section class = "profile-section px-lg-5">
+                            <h4 class = "heading-4 my-4">My Profile</h4>
+                            <div class = "row py-lg-4">
+                                <div class = "col-lg-6">
+                                    <div class = "row my-5 my-lg-0 px-5 px-lg-0">
+                                        <div class = "col-6 d-flex align-items-center pl-lg-5">
+                                            <div class = 'avatar-container inner-shadow-sm'>
+                                                <img class = "profile-avatar" src="./images/pp.jpg"/>
+                                            </div>
+                                        </div>
+                                        <div class = "col-6 id d-flex flex-column  justify-content-center">
+                                            <label class = "file-input-label outer-shadow-sm" for = "profile-pic">Select Profile Pic <i class="fas fa-angle-down ml-auto gw-accent-color"></i></label>
+                                            <input class = 'file-input' type = "file" name = "profile-pic" id = "profile-pic"/>
+                                            <button type = "button" class = "btn btn-sm btn-gw-primary"><i class="fas fa-upload"></i> Upload</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class = "col-lg-6">
+                                    <div class = "row my-5 my-lg-0 px-5 px-lg-0">
+                                        <div class = "col-6 d-flex align-items-center pl-lg-5">
+                                            <div class = 'avatar-container inner-shadow-sm'>
+                                                <img class = "profile-avatar" src="./images/sig.jpg"/>
+                                            </div>
+                                        </div>
+                                        <div class = "col-6 id d-flex flex-column r justify-content-center">
+                                            <label class = "file-input-label outer-shadow-sm" for = "profile-pic">Select Signature  <i class="fas fa-angle-down ml-auto gw-accent-color"></i></label>
+                                            <input class = 'file-input' type = "file" name = "profile-pic" id = "profile-pic"/>
+                                            <button type = "button" class = "btn btn-sm btn-gw-primary"><i class="fas fa-upload"></i> Upload</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class = "preferences-section px-lg-5">
+                            <h4 class = "heading-4 my-4">Preferences</h4>
+                            <div class = "preferences d-flex px-3 px-lg-5">
+                                <div class = "gw-input-group mr-2 mr-lg-5">
+                                    <label for = "gw-label theme">Theme</label>
+                                    <select class="browser-default custom-select gw-select outer-shadow-sm">
+                                        <option selected>Select Theme</option>
+                                        <option value="1">Dark</option>
+                                        <option value="2">Light</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class = "gw-input-group mb-5 mr-2 mr-lg-5">
+                                    <label for = "gw-label theme">Receive Mail</label>
+                                    <select class="browser-default custom-select gw-select outer-shadow-sm">
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="mobile-footer d-flex justify-content-around py-3 d-lg-none">
+                <a class="outer-shadow  href="">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a class="outer-shadow" href="">
+                    <i class="fas fa-list"></i>
+                </a>
+                <a class="outer-shadow active"" href="">
+                    <i class="fas fa-cog"></i>
+                </a>
+            </section>
+        </footer>
+    </body>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</html>
