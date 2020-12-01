@@ -97,119 +97,148 @@
                                                     </ul>
                                                     <div class="tab-content mt-1" id="myTabContent">
                                                         <div
-                                                            class="tab-pane fade show active"
+                                                            class="tab-pane fade show active px-lg-5"
                                                             id="requisition"
                                                             role="tabpanel"
                                                             aria-labelledby="requisition-tab"
                                                         >
-                                                            <h4 class="container mb-3 heading-4">Requisition Items</h4>
+                                                            <h4 class="container mb-4 heading-4">Requisition Items</h4>
                                                             <form class="container">
                                                                 <div class="form-row">
-                                                                    <div class="col">
-                                                                        <label class="m-0" for="name">Item Name</label>
-                                                                        <input type="text" id="name" class="form-control inner-shadow">
+                                                                    <div class="col-12 col-lg-3">
+                                                                        <label class="m-0 mb-2" for="name">Item Name</label>
+                                                                        <input type="text" id="name" class="form-control inner-shadow-sm">
                                                                     </div>
-                                                                    <div class="col">
-                                                                        <label class="m-0" for="name">Charged To</label>
-                                                                        <input type="text" id="name" class="form-control inner-shadow">
+                                                                    <div class="col-12 col-lg-3">
+                                                                        <label class="m-0 mb-2" for="name">Charged To</label>
+                                                                        <select class="browser-default custom-select inner-shadow-sm">
+                                                                            <option selected>Luminate</option>
+                                                                            <option value="1">Macarthur</option>
+                                                                            <option value="2">Luminate</option>
+                                                                            <option value="3">OCP</option>
+                                                                          </select>
                                                                     </div>
-                                                                    <div class="col">
-                                                                        <label class="m-0" for="name">Amount</label>
-                                                                        <input type="text" id="name" class="form-control inner-shadow">
+                                                                    <div class="col-12 col-lg-3">
+                                                                        <label class="m-0 mb-2" for="name">Amount</label>
+                                                                        <input type="number" id="name" class="form-control inner-shadow-sm">
                                                                     </div>
-                                                                    <div class="col">
+                                                                    <div class="col-12 col-lg-3">
                                                                         <button class="btn btn-sm btn-gw-primary mt-4">Add item</button>
                                                                     </div>
                                                                 </div>
                                                             </form>
                                                             <section class="container panel">
                                                                 <h6 class="mt-4 mb-3">Item List</h6>
-                                                                <div class="card outer-shadow mb-3">
-                                                                    <div class="card-body row">
-                                                                        <div class="col-5">
-                                                                            <p>Accommodation for three nights for ...</p>
-                                                                        </div>
-                                                                        <div class="col-3">
-                                                                            <h4 class="heading-4">₦120,000</h4>
-                                                                        </div>
-                                                                        <div class="col-2">
-                                                                            <p class="accent-color">Luminate</p>
-                                                                        </div>
-                                                                        <div class="col-2 action-btn">
-                                                                            <button class="btn btn-sm">
+                                                                <div class = "item-list outer-shadow-sm row">
+                                                                    <div class="col-lg-9">
+                                                                        <input type="text" disabled value="Accommodation for three nights for ..." />
+                                                                        <input type = "text" class="item-list-amount" disabled value = "12000"/>
+                                                                        <select class="browser-default custom-select inner-shadow-sm" disabled>
+                                                                            <option selected>Luminate</option>
+                                                                            <option value="1">Macarthur</option>
+                                                                            <option value="2">Luminate</option>
+                                                                            <option value="3">OCP</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class = "col-lg-3">
+                                                                        <div class="item-list-actions">
+                                                                            <button class="btn ">
                                                                                 <i class="fas fa-pen"></i>
                                                                             </button>
-                                                                            <button class="btn btn-sm">
+                                                                            <button class="btn">
                                                                                 <i class="fas fa-trash del-icon"></i>
                                                                             </button>
                                                                         </div>
                                                                     </div>
+                                                                    
+                                                                    
                                                                 </div>
-                                                                <div class="card outer-shadow mb-3">
-                                                                    <div class="card-body row">
-                                                                        <div class="col-5">
-                                                                            <p class="edit">Accommodation for three nights for</p>
-                                                                        </div>
-                                                                        <div class="col-3">
-                                                                            <h4 class="heading-4 edit">120000</h4>
-                                                                        </div>
-                                                                        <div class="col-2">
-                                                                            <p class="accent-color edit">Luminate</p>
-                                                                        </div>
-                                                                        <div class="col-2 action-btn">
-                                                                            <button class="btn btn-sm">
-                                                                                <i class="fas fa-save blue-clr"></i>
-                                                                            </button>
-                                                                            <button class="btn btn-sm">
-                                                                                <i class="fas fa-trash del-icon"></i>
-                                                                            </button>
-                                                                        </div>
+                                                                <div class = "item-list outer-shadow-sm row">
+                                                                    <div class="col-lg-9">
+                                                                        <input type="text"  value="Accommodation for three nights for ..." />
+                                                                        <input type = "text" class="item-list-amount"  value = "12000"/>
+                                                                        <select class="browser-default custom-select inner-shadow-sm" >
+                                                                            <option selected>Luminate</option>
+                                                                            <option value="1">Macarthur</option>
+                                                                            <option value="2">Luminate</option>
+                                                                            <option value="3">OCP</option>
+                                                                        </select>
                                                                     </div>
-                                                                </div>
-                                                                <div class="card outer-shadow mb-3">
-                                                                    <div class="card-body row">
-                                                                        <div class="col-5">
-                                                                            <p>Accommodation for three nights for ...</p>
-                                                                        </div>
-                                                                        <div class="col-3">
-                                                                            <h4 class="heading-4">₦120,000</h4>
-                                                                        </div>
-                                                                        <div class="col-2">
-                                                                            <p class="accent-color">Luminate</p>
-                                                                        </div>
-                                                                        <div class="col-2 action-btn">
-                                                                            <button class="btn btn-sm">
+                                                                    <div class = "col-lg-3">
+                                                                        <div class="item-list-actions">
+                                                                            <button class="btn ">
                                                                                 <i class="fas fa-pen"></i>
                                                                             </button>
-                                                                            <button class="btn btn-sm">
+                                                                            <button class="btn">
                                                                                 <i class="fas fa-trash del-icon"></i>
                                                                             </button>
                                                                         </div>
                                                                     </div>
+                                                                    
+                                                                    
                                                                 </div>
+                                                                <div class = "item-list outer-shadow-sm row">
+                                                                    <div class="col-lg-9">
+                                                                        <input type="text"  value="Accommodation for three nights for ..." />
+                                                                        <span class="item-list-amount">₦120,000</span>
+                                                                        <span class="gw-accent-color">luminate</span>
+                                                                    </div>
+                                                                    <div class = "col-lg-3">
+                                                                        <div class="item-list-actions">
+                                                                            <button class="btn ">
+                                                                                <i class="fas fa-pen"></i>
+                                                                            </button>
+                                                                            <button class="btn">
+                                                                                <i class="fas fa-trash del-icon"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    
+                                                                </div>
+                                                                <div class = "item-list outer-shadow-sm row">
+                                                                    <div class="col-lg-9">
+                                                                        <input type="text" disabled value="Accommodation for three nights for ..." />
+                                                                        <span class="item-list-amount">₦120,000</span>
+                                                                        <span class="gw-accent-color">luminate</span>
+                                                                    </div>
+                                                                    <div class = "col-lg-3">
+                                                                        <div class="item-list-actions">
+                                                                            <button class="btn ">
+                                                                                <i class="fas fa-pen"></i>
+                                                                            </button>
+                                                                            <button class="btn">
+                                                                                <i class="fas fa-trash del-icon"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    
+                                                                </div>
+                                                                
                                                             </section>
                                                             <form class="container">
                                                                 <div class="form-row mt-5">
                                                                     <div class="col">
                                                                       <div class="form-group">
                                                                         <label for="currency">Currency</label>
-                                                                        <input type="text" id="currency" class="form-control inner-shadow">
+                                                                        <input type="text" id="currency" class="form-control inner-shadow-sm">
                                                                       </div>
                                                                     </div>
                                                                     <div class="col">
                                                                         <div class="form-group">
                                                                             <label for="total">Total</label>
-                                                                            <input type="text" id="total" class="form-control inner-shadow">
+                                                                            <input type="number" id="total" class="form-control inner-shadow-sm">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="m-0" for="amount">Amount In words</label>
-                                                                    <input type="text" id="amount" class="form-control inner-shadow">
+                                                                    <input type="text" id="amount" class="form-control inner-shadow-sm">
                                                                 </div>
                                                                 <div class="d-flex justify-content-between py-5">
-                                                                    <button type="button" class="btn btn-gw-secondary" data-dismiss="modal">Cancel</button>
-                                                                    <button type="button" class="btn btn-gw-primary">Next</button>
+                                                                    <button type="button" class="btn btn-gw-secondary outer-shadow-sm" data-dismiss="modal">Cancel</button>
+                                                                    <button type="button" class="btn btn-gw-primary outer-shadow-sm">Next</button>
                                                                 </div>
                                                             </form>
                                                         </div>

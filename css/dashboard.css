@@ -1,5 +1,8 @@
 .inner-shadow {
-  box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .35), inset -10px -10px 20px white;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, .35), inset -5px -5px 6px white;
+}
+.inner-shadow-small {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .35), inset -2px -2px 3px white;
 }
 
 .inner-outer-shadow {
@@ -11,6 +14,8 @@
 }
 
 .db-left-col {
+  position: fixed;
+  width: 17%;
   height: 85vh;
   border-radius: 31px;
 }
@@ -34,9 +39,13 @@
 
 .mobile-footer {
   position: fixed;
-  width: 100%;
+  left: 5px;
+  right: 5px;
+  border-radius: 15px;
   bottom: 0;
-  background-color: #d7e0da;
+  background-color: var(--bg-light);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25), -3px -3px 5px white;
+
 }
 
 .mobile-footer a {
@@ -52,7 +61,7 @@
 }
 
 .mobile-footer .active, .nav-active {
-  box-shadow: inset 3px 3px 10px rgba(0, 0, 0, .35), inset -5px -5px 10px white;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .35), inset -5px -5px 6px white;
 }
 
 .inner-shadow i {
@@ -84,15 +93,18 @@
   color: var(--accent-color);
 }
 
-.right-col {
+/* .right-col {
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-}
+} */
 
 .right-col::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+.activity>div{
+  transition: box-shadow 1200ms linear, border-radius 900ms ease-in-out;
 }
 
 .action-btn {
@@ -129,13 +141,23 @@
 .activity span, .date {
   font-size: 12px;
 }
+.det-container{
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+}
 
 .date {
   color: var(--accent-color);
+  padding-left: 5px;
+  font-weight: bold;
 }
 
 .desc {
   font-size: 14px;
+  line-height: 1.8;
+  padding-left: 5px
 }
 
 .check-name {
@@ -159,17 +181,53 @@
 }
 
 @media (max-width: 600px) {
+  body{
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
   .action-btn {
     margin-top: 1em;
+    width: 50px;
+  height: 50px;
+  }
+  .right-col{
+    margin: 0 !important;
+    padding: 0 .5em !important;
   }
   .date, .desc {
-    padding: 0 .8em;
+    padding: 0.1px 0;
+  }
+  .desc{
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  .det-container{
+    margin: 1rem 0;
+    padding: 0 0 !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  .action-container{
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .action-container button:not(:first-child){
+    margin-left: 50px;
+  }
+  .recent-act{
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25), -3px -3px 5px white;
+
   }
 }
 
 @media (min-width: 1000px) {
   .activity>div:hover {
-    box-shadow: inset 3px 3px 12px rgba(0, 0, 0, .35), inset -10px -10px 20px white;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .35), inset -5px -5px 6px white;
     border-radius: 10px;
   }
 }
