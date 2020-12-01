@@ -11,8 +11,10 @@
 }
 
 .db-left-col {
-  height: 85vh;
   border-radius: 31px;
+  position: fixed;
+  height: max-content;
+  width: 20%;
 }
 
 .logout-icon {
