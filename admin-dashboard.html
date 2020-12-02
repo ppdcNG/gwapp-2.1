@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="container my-5">
-                <section class="header-container">
+                <section class="header-container pb-3">
                     <div class="d-flex content avatar pt-4">
                         <img class="rounded-circle" alt="avatar" src="https://placehold.it/80x80">
                         <div class="pt-3 pl-1 header-name">
@@ -65,7 +65,7 @@
                         </a>
                     </div>
                 </section>
-                <section class="mt-5 pt-3 action-section">
+                <section class="mt-5 pt-4 action-section">
                     <div class="d-flex">
                         <div class="inner-shadow column mr-4">
                             <i class="fas fa-tachometer-alt gw-accent-color"></i>
@@ -75,7 +75,7 @@
                             <i class="fas fa-folder gw-accent-color"></i>
                             <p>Projects</p>
                         </div>
-                        <div class="outer-shadow column mx-4">
+                        <div class="outer-shadow column mx-4" data-toggle="modal" data-target="#requisitionModal">
                             <i class="fas fa-recycle gw-accent-color"></i>
                             <p>Generate</p>
                         </div>
@@ -85,20 +85,67 @@
                         </div>
                     </div>
                 </section>
-                <section class="my-5 row">
-                    <div class="col">
+                <section class="my-5 pt-3 row">
+                    <div class="col filter">
                         <h6 class="mt-4 heading-6">Filter Requisition</h6>
+                        <form class="mt-4">
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <select class="browser-default custom-select outer-shadow">
+                                        <option selected>For My Attention</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select class="browser-default custom-select outer-shadow">
+                                        <option selected>This Week</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn-gw-primary btn-md">
+                                <i class="fas fa-filter"></i>
+                                Filter
+                            </button>
+                        </form>
                     </div>
-                    <div class="col .d-none .d-lg-block">
+                    <div class="col d-none d-lg-block">
                         <h6 class="mt-4 heading-6">Advanced Filter</h6>
+                        <form class="mt-4">
+                            <div class="form-row mb-4">
+                                <div class="col pick-date">
+                                    <input
+                                        placeholder="Start date"
+                                        type="text"
+                                        id="example"
+                                        class="px-3 form-control datepicker outer-shadow"
+                                    >
+                                </div>
+                                <div class="col pick-date">
+                                    <input
+                                        placeholder="End date"
+                                        type="text"
+                                        id="example"
+                                        class="px-3 form-control datepicker outer-shadow"
+                                    >
+                                </div>
+                                <div class="col">
+                                    <select class="browser-default custom-select outer-shadow">
+                                        <option selected>Project</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn-gw-primary btn-md">
+                                <i class="fas fa-filter"></i>
+                                Filter
+                            </button>
+                        </form>
                     </div>
                 </section>
                 <section class="my-5">
-                    <h5 class="mt-4 heading-5">Requisitions</h5>
-                    <div class="">
-                        <div class="row mt-5 py-3">
+                    <h5 class="pt-3 heading-5">Requisitions</h5>
+                    <div class="activity">
+                        <div class="row mt-3 py-3">
                             <div class="col-lg-4">
-                                <p class="date m-0">13th June, 2020</p>
+                                <p class="date gw-accent-color m-0">13th June, 2020</p>
                                 <p class="desc m-0 mt-1">Transportation to and from Home to Radio House For Budeshi Show on 5th August 2020</p>
                             </div>
                             <div class="col-lg-5  det-container">
@@ -107,11 +154,15 @@
                                     <h5 class="check-name mt-1">₦100,000</h5>
                                 </div>
                                 <div class="col">
+                                    <span>Type</span>
+                                    <p class="check-name">Petty Cash</p>
+                                </div>
+                                <div class="col">
                                     <span>Finance Checked</span>
                                     <p class="check-name">Yetunde Ojetunde</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 d-flex align-items-center action-container">
+                            <div class="col-lg-3 d-flex align-items-center action-btn-container">
                                 <button class="action-btn btn btn-gw-circle outer-shadow">
                                     <i class="fas fa-pen gw-accent-color"></i>
                                 </button>
@@ -124,9 +175,9 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="row mt-5">
+                        <div class="row mt-5 py-3">
                             <div class="col-lg-4 ">
-                                <p class="date m-0">13th June, 2020</p>
+                                <p class="date gw-accent-color m-0">13th June, 2020</p>
                                 <p class="desc m-0 mt-1">Transportation to and from Home to Radio House For Budeshi Show on 5th August 2020</p>
                             </div>
                             <div class="col-lg-5  det-container">
@@ -135,11 +186,15 @@
                                     <h5 class="check-name mt-1">₦100,000</h5>
                                 </div>
                                 <div class="col">
+                                    <span>Type</span>
+                                    <p class="check-name">Petty Cash</p>
+                                </div>
+                                <div class="col">
                                     <span>Approved By</span>
                                     <p class="check-name">Nkem Ilo</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 d-flex align-items-center action-container">
+                            <div class="col-lg-3 d-flex align-items-center action-btn-container">
                                 <button class="action-btn btn btn-gw-circle inner-shadow gw-success-color">
                                     <i class="fas fa-check"></i>
                                 </button>
@@ -156,16 +211,241 @@
                 </section>
             </div>
         </main>
+        <!--  -->
+        <!-- MODAL -->
+        <!--  -->
+        <div
+            class="modal fade"
+            id="requisitionModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="requisitionModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body container px-5">
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="mt-5">
+                            <section class="d-flex justify-content-between">
+                                <div>
+                                    <h6 class="heading-5">Name</h6>
+                                    <p>Adekunle Adelowo</p>
+                                </div>
+                                <div>
+                                    <h6 class="heading-5">Date</h6>
+                                    <p>19, Nov. 2020</p>
+                                </div>
+                                <div>
+                                    <h6 class="heading-5">Type</h6>
+                                    <p>...</p>
+                                </div>
+                            </section>
+                            <section class="mt-4 pt-4">
+                                <h6 class="heading-5">Description</h6>
+                                <p>Transportation to and from Home to Radio House For Budeshi Show on 5th August 2020</p>
+                            </section>
+                            <section class="d-flex justify-content-between mt-4 pt-4 beneficiary">
+                                <div>
+                                    <h6 class="heading-5">Name of Beneficiary</h6>
+                                    <p>Adekunle Adelowo</p>
+                                </div>
+                                <div>
+                                    <h6 class="heading-5">Account Number</h6>
+                                    <p>0078976543</p>
+                                </div>
+                                <div>
+                                    <h6 class="heading-5">Bank</h6>
+                                    <p>Diamond Bank</p>
+                                </div>
+                            </section>
+                            <section class="mt-4 pt-4">
+                                <h6 class="heading-6">Invoices</h6>
+                                <div class="d-flex invoices">
+                                    <div class="outer-shadow column-sm mr-4">
+                                        <p>Hotel Receipt</p>
+                                        <i class="fas fa-trash gw-danger-color"></i>
+                                    </div>
+                                    <div class="outer-shadow column-sm mr-4">
+                                        <p>Hotel Receipt</p>
+                                        <i class="fas fa-trash gw-danger-color"></i>
+                                    </div>
+                                    <div class="outer-shadow column-sm mr-4">
+                                        <p>Hotel Receipt</p>
+                                        <i class="fas fa-trash gw-danger-color"></i>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mt-4 pt-4 row">
+                                <div class="col-lg-10">
+                                    <h6 class="heading-6">Item List</h6>
+                                    <div class="outer-shadow items mt-3 p-3">
+                                        <div class="flex-grow-1">
+                                            <p class="m-0">Accommodation for three nights</p>
+                                        </div>
+                                        <div class="">
+                                            <h5 class="m-0 heading-5">N120,000</h5>
+                                        </div>
+                                        <div class="">
+                                            <select class="form-control custom-select outer-shadow">
+                                                <option value="">Transport(2020)</option>
+                                            </select>
+                                        </div>
+                                        <div class="edit">
+                                            <a>
+                                                <i class="fas fa-pen gw-accent-color"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="outer-shadow items mt-3 p-3">
+                                        <div class="flex-grow-1">
+                                            <p class="m-0">Accommodation for three nights</p>
+                                        </div>
+                                        <div class="">
+                                            <h5 class="m-0 heading-5">N120,000</h5>
+                                        </div>
+                                        <div class="">
+                                            <select class="form-control custom-select outer-shadow">
+                                                <option value="">Transport(2020)</option>
+                                            </select>
+                                        </div>
+                                        <div class="edit">
+                                            <a>
+                                                <i class="fas fa-pen gw-accent-color"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 figures">
+                                    <div>
+                                        <h6 class="heading-6">Total</h6>
+                                        <p class="m-0">N100,000</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="heading-6">Amount in Words</h6>
+                                        <p class="m-0">One hundred thousand naira only</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mt-4 pt-4 source">
+                                <select class="form-control custom-select outer-shadow">
+                                    <option value="">Charged To</option>
+                                </select>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div>
+                                        <h6 class="heading-6">Source Account</h6>
+                                        <p>Adekunle Adelowo</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="heading-6">Source Account Number</h6>
+                                        <p>0078976543</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="heading-6">Bank</h6>
+                                        <p>Diamond Bank</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mt-4 pt-4">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <h6 class="heading-6">Receipt</h6>
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="col file">
+                                                    <label for="file-upload" class="outer-shadow">Select File
+                                                        <i class="fas fa-angle-down ml-auto gw-accent-color"></i>
+                                                    </label>
+                                                    <input type="file" name="file-upload" id="file-upload">
+                                                </div>
+                                                <div class="col submit-file">
+                                                    <button class="btn btn-md btn-gw-primary">
+                                                        <i class="fas fa-filter"></i>
+                                                        Upload
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-5 receipt-list">
+                                        <h6 class="heading-6">Receipt List</h6>
+                                        <div class="d-flex">
+                                            <div class="outer-shadow column-xs mr-4">
+                                                <p>Hotel Receipt</p>
+                                                <i class="fas fa-trash gw-danger-color"></i>
+                                            </div>
+                                            <div class="outer-shadow column-xs mr-4">
+                                                <p>Hotel Receipt</p>
+                                                <i class="fas fa-trash gw-danger-color"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mt-4 pt-4">
+                                <div class="container check-buttons">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <button class=" btn btn-md btn-gw-primary">
+                                                <i class="fas fa-filter"></i>
+                                                Budget Holder Check
+                                            </button>
+                                        </div>
+                                        <div class="">
+                                            <button class=" btn btn-md btn-gw-info">
+                                                <i class="fas fa-filter"></i>
+                                                Reviewer Check
+                                            </button>
+                                        </div>
+                                        <div class="">
+                                            <button class=" btn btn-md btn-gw-success d-none d-lg-block">
+                                                <i class="fas fa-filter"></i>
+                                                Approve
+                                            </button>
+                                        </div>
+                                        <div class="">
+                                            <button class=" btn btn-md btn-gw-primary-outline d-none d-lg-block">
+                                                <i class="fas fa-filter"></i>
+                                                Uploaded For Payment
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <button class=" btn btn-md btn-gw-success d-none d-lg-block">
+                                            <i class="fas fa-filter"></i>
+                                            Payment Made
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!-- MODAL END -->
+        <!--  -->
         <footer>
             <section class="mobile-footer d-flex justify-content-around py-3 d-lg-none">
                 <a class="outer-shadow active" href="">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-tachometer-alt gw-accent-color"></i>
                 </a>
                 <a class="outer-shadow" href="">
-                    <i class="fas fa-list"></i>
+                    <i class="fas fa-folder"></i>
                 </a>
                 <a class="outer-shadow" href="">
-                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-recycle"></i>
+                </a>
+                <a class="outer-shadow" href="">
+                    <i class="fas fa-chart-line"></i>
                 </a>
             </section>
         </footer>
@@ -178,4 +458,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet">
+    <script src="./js/admin-dashboard.js"></script>
 </html>

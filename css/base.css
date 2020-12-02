@@ -1,9 +1,12 @@
 :root {
   --bg-light: #e5ebe7;
+  --bg-info: #A3D9EA;
+  --bg-success: #A3EAD4;
   --bd-light: white;
   --accent-color: #CEAFE7;
   --text-light: rgba(46, 34, 34, 0.25);
   --text-lighter: #c4c4c4;
+  --text-dimmed: #9D94A3;
 }
 /* :root {
   --bg-light: #181d1d;
@@ -53,10 +56,26 @@ body {
   color: white;
   border-radius: 12px;
 }
+.btn-gw-primary-outline {
+  background-color: var(--bg-light);
+  color: var(--accent-color);
+  border-radius: 12px;
+  border: 2px solid var(--accent-color);
+}
 
 .btn-gw-secondary {
   color: var(--accent-color);
   background-color: var(--bg-light);
+  border-radius: 12px;
+}
+.btn-gw-info {
+  color: white;
+  background-color: var(--bg-info);
+  border-radius: 12px;
+}
+.btn-gw-success {
+  color: white;
+  background-color: var(--bg-success);
   border-radius: 12px;
 }
 
